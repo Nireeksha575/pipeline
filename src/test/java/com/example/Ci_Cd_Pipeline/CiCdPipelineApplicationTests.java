@@ -27,5 +27,10 @@ class CiCdPipelineApplicationTests {
 				.andExpect(status().isOk())
 				.andExpect(content().string("Welcome to nireeksha's world"));
 	}
+	@Test
+	void welcomeEndpointNotWorking() throws Exception {
+		mockMvc.perform(get("/this-endpoint-does-not-exist"))
+				.andExpect(status().isNotFound());
+	}
 
 }
