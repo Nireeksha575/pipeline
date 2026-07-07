@@ -11,7 +11,7 @@ public class CiCdPipelineApplication {
 
 	@GetMapping("/welcome")
 	public String getWElcome(){
-		return "Welcome to nireeksha's world";
+		return "Welcome to world";
 	}
 
 	public static void main(String[] args) {
