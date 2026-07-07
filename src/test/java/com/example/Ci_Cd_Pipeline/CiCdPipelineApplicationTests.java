@@ -25,7 +25,7 @@ class CiCdPipelineApplicationTests {
 	void welcomeEndpointReturnsCorrectMessage() throws Exception {
 		mockMvc.perform(get("/welcome"))
 				.andExpect(status().isOk())
-				.andExpect(content().string("Welcome to nireeksha's world"));
+				.andExpect(content().string("Welcome to world"));
 	}
 	@Test
 	void welcomeEndpointNotWorking() throws Exception {
